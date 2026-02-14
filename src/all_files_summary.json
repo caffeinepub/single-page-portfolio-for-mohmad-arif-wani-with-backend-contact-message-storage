@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko actor storing submitted messages with timestamps and exposing submitMessage and getAllMessages APIs.",
+  "feature_evidence.json": "Feature evidence report mapping features to modified frontend files and related metadata.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of various frontend files in the project.",
+  "frontend/index.css": "Tailwind base and dark‑mode OKLCH variable definitions establishing global color tokens and styling.",
+  "frontend/index.html": "HTML entry point loading fonts, metadata, dark mode, and mounting the React app.",
+  "frontend/src/App.tsx": "Main React component that renders the single‑page portfolio.",
+  "frontend/src/components/PortfolioBackground.tsx": "Static aurora‑style gradient background with layered blurred orbs for depth.",
+  "frontend/src/components/Reveal.tsx": "Scroll‑reveal wrapper applying motion‑safe fade/translate animations using useScrollReveal.",
+  "frontend/src/content/contact.ts": "Exports a single CONTACT_EMAIL constant.",
+  "frontend/src/content/profilePhoto.ts": "Exports PROFILE_PHOTO_PATH and documents where to place the profile image file.",
+  "frontend/src/features/contact/ContactForm.tsx": "Contact form handling input, validation, submit flow, and success/error alerts.",
+  "frontend/src/features/contact/useContactForm.ts": "Hook that sends messages to the backend and manages submission state.",
+  "frontend/src/hooks/useActor.ts": "Creates and caches backend actors based on Internet Identity state and manages refetching.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and hooks for managing Internet Identity login, state, and persistence.",
+  "frontend/src/hooks/useQueries.ts": "Defines a React Query hook that fetches all messages from the backend actor when available.",
+  "frontend/src/hooks/useScrollReveal.ts": "Implements an intersection‑observer based hook that reveals elements on scroll, respecting reduced‑motion preferences.",
+  "frontend/src/index.css": "Tailwind base styles plus extensive CSS variables and custom gradient/text utilities for light and dark themes.",
+  "frontend/src/main.tsx": "Bootstraps the React app with React Query and Internet Identity providers and loads global styles.",
+  "frontend/src/pages/PortfolioSinglePage.tsx": "Renders the full portfolio page with scroll‑activated navigation, section scrolling logic, and UI components.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, fonts, animations, and enabling plugins for animations and typography.",
+  "project_state.json": "Project metadata describing the portfolio site's purpose, architecture notes, existing features, and requirements."
+}

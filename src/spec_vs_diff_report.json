@@ -1,0 +1,33 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T08:42:18.898Z",
+  "summary": "REQ-19/20/21 appear to be implemented via a new aurora-style background component applied at the page level, new gradient/label text utilities and usage in the portfolio page, and a clearly documented/exported profile photo path constant matching the required asset path. The diff also introduces unrequested navigation behavior (scroll spy + active link styling) and custom smooth-scroll handling.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Scroll-spy behavior that tracks the active section on scroll and changes nav link styling based on active section.",
+      "reason": "BuildRequest focuses on background styling, decorated text accents, and documenting the profile photo path; it does not request adding active-section tracking or modifying navigation behavior beyond existing composition.",
+      "evidence": [
+        "frontend/src/pages/PortfolioSinglePage.tsx"
+      ]
+    },
+    {
+      "description": "Custom smooth scrolling implementation using window.scrollTo({ behavior: 'smooth' }) with an offset calculation.",
+      "reason": "Not requested by REQ-19/20/21; this changes interaction behavior rather than background/text/path documentation.",
+      "evidence": [
+        "frontend/src/pages/PortfolioSinglePage.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/PortfolioBackground.tsx",
+    "frontend/src/content/profilePhoto.ts",
+    "frontend/src/index.css",
+    "frontend/src/pages/PortfolioSinglePage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

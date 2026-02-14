@@ -1,0 +1,63 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-make-the-portfolio-s-overall-background-more-colorful-while-keeping-it-professional-and-readable-e-g-add-subtle-multi-color-gradients-aurora-effects-behind-the-page-and-or-alternating-sections-and-ensure-the-new-background-styling-is-applied-consistently-across-the-single-page-layout",
+      "featureTitle": "Make the portfolio’s overall background more colorful while keeping it professional and readable (e.g., add subtle multi-color gradients/aurora effects behind the page and/or alternating sections) and ensure the new background styling is applied consistently across the single-page layout.",
+      "files": [
+        "frontend/src/components/PortfolioBackground.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/PortfolioSinglePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-enhance-decorated-text-styling-across-the-portfolio-by-adding-tasteful-typographic-accents-e-g-gradient-headings-highlighted-keywords-labels-subtle-text-outlines-shadows-where-appropriate-while-keeping-the-design-cohesive-with-the-existing-palette-and-ensuring-it-works-with-reduced-motion-accessibility-preferences",
+      "featureTitle": "Enhance “decorated text” styling across the portfolio by adding tasteful typographic accents (e.g., gradient headings, highlighted keywords/labels, subtle text outlines/shadows where appropriate) while keeping the design cohesive with the existing palette and ensuring it works with reduced-motion/accessibility preferences.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/src/pages/PortfolioSinglePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-provide-the-exact-in-repo-file-path-where-the-user-should-place-replace-their-profile-photo-so-it-appears-in-the-hero-section-and-make-this-path-discoverable-in-the-codebase-e-g-via-a-clearly-named-constant-and-or-an-inline-comment-near-the-hero-image-the-currently-used-profile-image-path-must-be-surfaced-exactly-as-used-by-the-app",
+      "featureTitle": "Provide the exact in-repo file path where the user should place/replace their profile photo so it appears in the Hero section, and make this path discoverable in the codebase (e.g., via a clearly named constant and/or an inline comment near the Hero image). The currently used profile image path must be surfaced exactly as used by the app.",
+      "files": [
+        "frontend/src/content/profilePhoto.ts",
+        "frontend/src/pages/PortfolioSinglePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

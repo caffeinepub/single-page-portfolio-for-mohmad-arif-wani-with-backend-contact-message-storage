@@ -1,0 +1,76 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Professional colorful background, enhanced text accents, and documented Hero profile photo path",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "summary": "Introduce a more colorful (but professional) aurora/gradient background and apply it consistently across the single-page portfolio while preserving readable contrast and section separation.",
+      "acceptanceCriteria": [
+        "The site background shows a clearly more colorful (but not distracting) gradient/aurora-style treatment compared to the current flat dark navy background.",
+        "Text contrast remains accessible (no major readability regressions on headings, body text, and cards).",
+        "The updated background styling is consistent across the single-page portfolio (Hero through Footer), with sections still visually separated (e.g., via subtle overlays, tints, or dividers).",
+        "No changes are made to any files under the immutable paths listed in SYSTEM_CONTEXT."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global CSS utilities/classes for an aurora-style multi-layer background (static, subtle opacity) and section-surface/tint helpers that keep content readable and visually separated across the entire single-page layout."
+        },
+        {
+          "path": "frontend/src/components/PortfolioBackground.tsx",
+          "operation": "create",
+          "description": "Create a reusable background component that renders the aurora/gradient layers behind the page content (non-interactive, low-opacity) and respects reduced-motion preferences (no animated movement)."
+        },
+        {
+          "path": "frontend/src/pages/PortfolioSinglePage.tsx",
+          "operation": "modify",
+          "description": "Wire the new PortfolioBackground component into the page wrapper so the colorful background applies consistently across Hero through Footer, and adjust section wrapper classes to maintain subtle section separation with readable overlays."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Enhance decorated text styling with cohesive typographic accents (gradients, highlights, subtle outlines/shadows) while maintaining legibility and honoring reduced-motion preferences.",
+      "acceptanceCriteria": [
+        "Section headings and key labels have visibly enhanced styling (e.g., gradients/accents) beyond the current baseline, without looking cluttered.",
+        "Decorative text effects do not reduce legibility on mobile and desktop breakpoints.",
+        "Reduced motion users do not see animated/flashy text effects (static styling remains acceptable)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Extend typography accent utilities (e.g., subtle text glow/shadow, outline, highlighted keyword/label styles) and ensure reduced-motion handling keeps all effects static and legible."
+        },
+        {
+          "path": "frontend/src/pages/PortfolioSinglePage.tsx",
+          "operation": "modify",
+          "description": "Apply the new decorated text utility classes to section headings and key labels already present in the single-page layout (without changing content structure) to achieve consistent, tasteful typographic accents across the portfolio."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Document and surface the exact in-repo profile photo file path used by the Hero image, making it easy to find and replace.",
+      "acceptanceCriteria": [
+        "The Hero section profile image source path is clearly documented in the codebase and matches the live-used path.",
+        "The documented path points to the currently referenced image: \"/assets/generated/random-profile-photo.dim_800x800.jpg\" and corresponds to a file location under \"frontend/public/assets/generated/random-profile-photo.dim_800x800.jpg\".",
+        "Documentation is written in English and is easy to find (e.g., comment adjacent to the <img> in \"frontend/src/pages/PortfolioSinglePage.tsx\" or a small exported constant used by the component)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/profilePhoto.ts",
+          "operation": "create",
+          "description": "Create an exported constant for the Hero profile photo source path set to \"/assets/generated/random-profile-photo.dim_800x800.jpg\" and include an English comment stating the exact in-repo file location to replace: \"frontend/public/assets/generated/random-profile-photo.dim_800x800.jpg\"."
+        },
+        {
+          "path": "frontend/src/pages/PortfolioSinglePage.tsx",
+          "operation": "modify",
+          "description": "Import and use the new profile photo constant for the Hero <img> src, and add a short inline English comment adjacent to the <img> reiterating that the file to replace is located at \"frontend/public/assets/generated/random-profile-photo.dim_800x800.jpg\" (matching the live-used path)."
+        }
+      ]
+    }
+  ]
+}

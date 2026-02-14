@@ -1,0 +1,71 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T08:42:18.901Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-19",
+        "summary": "Make the portfolio’s overall background more colorful while keeping it professional and readable (e.g., add subtle multi-color gradients/aurora effects behind the page and/or alternating sections) and ensure the new background styling is applied consistently across the single-page layout.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/PortfolioBackground.tsx",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/components/PortfolioBackground.tsx",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Enhance “decorated text” styling across the portfolio by adding tasteful typographic accents (e.g., gradient headings, highlighted keywords/labels, subtle text outlines/shadows where appropriate) while keeping the design cohesive with the existing palette and ensuring it works with reduced-motion/accessibility preferences.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-21",
+        "summary": "Provide the exact in-repo file path where the user should place/replace their profile photo so it appears in the Hero section, and make this path discoverable in the codebase (e.g., via a clearly named constant and/or an inline comment near the Hero image). The currently used profile image path must be surfaced exactly as used by the app.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/content/profilePhoto.ts",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/content/profilePhoto.ts",
+          "frontend/src/pages/PortfolioSinglePage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/PortfolioBackground.tsx",
+    "frontend/src/content/profilePhoto.ts",
+    "frontend/src/index.css",
+    "frontend/src/pages/PortfolioSinglePage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

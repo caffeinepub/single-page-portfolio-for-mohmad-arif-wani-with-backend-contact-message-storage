@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Single-page professional portfolio website for Mohmad Arif Wani (MCA graduate) targeting entry-level Data Scientist roles, with a modern responsive design and a small backend to enable optional dynamic features (e.g., contact form message storage).",
+  "architectural_notes": [
+    "Site will include a small backend to enable optional features (at minimum, support a contact form message store) rather than being purely static.",
+    "All in-page navigation should use smooth scrolling and the navbar should be sticky.",
+    "External links (e.g., GitHub) must open in a new tab.",
+    "Primary contact email to display across the site is arifwani1995@gmail.com (replace previous email wherever shown).",
+    "Profile photo asset should be placed under frontend/public/assets/generated/ and referenced by the Hero section image/avatar component."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-fully-responsive-portfolio-website-for-mohmad-arif-wani-with-the-following-sections-in-this-order-home-hero-about-objective-education-skills-projects-experience-certifications-achievements-contact-footer-populate-each-section-with-the-exact-content-provided-by-the-user-names-titles-descriptions-institutions-durations-scores-skills-lists-project-details-certifications-achievements-and-extracurricular-items",
+      "title": "Create a single-page, fully responsive portfolio website for Mohmad Arif Wani with the following sections in this order: Home/Hero, About (Objective), Education, Skills, Projects, Experience, Certifications & Achievements, Contact/Footer. Populate each section with the exact content provided by the user (names, titles, descriptions, institutions, durations, scores, skills lists, project details, certifications, achievements, and extracurricular items).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-header-navigation-bar-with-smooth-scroll-anchor-navigation-links-to-home-objective-about-skills-projects-experience-certifications-and-contact-include-a-visually-prominent-resume-button-link-in-the-navbar-it-may-link-to-a-static-pdf-asset-or-a-placeholder-url-for-now",
+      "title": "Implement a sticky header/navigation bar with smooth-scroll anchor navigation links to: Home, Objective (About), Skills, Projects, Experience, Certifications, and Contact. Include a visually prominent \"Resume\" button/link in the navbar (it may link to a static PDF asset or a placeholder URL for now).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-hero-section-with-name-mohmad-arif-wani-professional-title-data-scientist-machine-learning-enthusiast-the-provided-short-tagline-contact-info-displayed-as-icons-with-text-phone-91-6005659068-email-arifwani12312300-gmail-com-github-link-and-two-cta-buttons-view-my-work-scroll-to-projects-and-contact-me-scroll-to-contact",
+      "title": "Build the Hero section with: name (\"Mohmad Arif Wani\"), professional title (\"Data Scientist & Machine Learning Enthusiast\"), the provided short tagline, contact info displayed as icons with text (Phone +91 6005659068, Email arifwani12312300@gmail.com, GitHub link), and two CTA buttons: \"View My Work\" (scroll to Projects) and \"Contact Me\" (scroll to Contact).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-education-section-as-stylish-cards-or-a-timeline-with-three-entries-exactly-as-provided-mca-at-university-of-kashmir-with-duration-2019-2023-cgpa-7-9-and-key-courses-diploma-in-copa-at-iti-seer-hamdan-with-duration-2018-84-key-learning-bsc-at-government-boys-degree-college-anantnag-with-duration-2014-2017-and-key-learning",
+      "title": "Implement the Education section as stylish cards or a timeline, with three entries exactly as provided (MCA at University of Kashmir with duration 2019–2023, CGPA 7.9, and key courses; Diploma in COPA at ITI Seer Hamdan with duration 2018, 84%, key learning; BSc at Government Boys Degree College Anantnag with duration 2014–2017 and key learning).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-skills-section-titled-technical-toolkit-using-categorized-visually-appealing-chips-or-an-icon-grid-for-the-provided-categories-and-items-programming-languages-ml-data-science-web-development-tools-technologies-office-finance-other-strengths",
+      "title": "Implement the Skills section titled \"Technical Toolkit\" using categorized, visually appealing chips or an icon grid for the provided categories and items (Programming Languages; ML & Data Science; Web Development; Tools & Technologies; Office & Finance; Other Strengths).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-projects-section-titled-featured-projects-as-a-responsive-grid-of-project-cards-each-card-must-include-project-title-description-tech-used-achievement-where-provided-and-a-github-repo-link-ensure-all-github-links-are-clickable-and-open-in-a-new-tab-use-the-exact-urls-provided-for-the-projects-that-include-links",
+      "title": "Implement the Projects section titled \"Featured Projects\" as a responsive grid of project cards. Each card must include: project title, description, tech used, achievement where provided, and a GitHub repo link. Ensure all GitHub links are clickable and open in a new tab. Use the exact URLs provided for the projects that include links.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-experience-section-titled-professional-journey-as-a-timeline-or-cards-with-both-roles-and-responsibilities-exactly-as-provided-computer-trainer-at-neilit-base-institute-saligam-junior-data-scientist-kaggle-platform-self-employed-freelance",
+      "title": "Implement the Experience section titled \"Professional Journey\" as a timeline or cards with both roles and responsibilities exactly as provided (Computer Trainer at NEILIT Base Institute, Saligam; Junior Data Scientist (Kaggle Platform) self-employed/freelance).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-certifications-achievements-section-including-certifications-list-python-certificate-great-lakes-gst-certificate-skill-india-english-speaking-certificate-josh-app-achievements-list-top-10-mca-certificate-for-final-year-covid-19-project-and-extracurricular-item-volunteer-coding4all-initiative-taught-underprivileged-students-basic-programming",
+      "title": "Implement the Certifications & Achievements section including: certifications list (Python Certificate - Great Lakes; GST Certificate - Skill India; English Speaking Certificate - Josh App), achievements list (top 10% MCA; certificate for final year COVID-19 project), and extracurricular item (Volunteer, Coding4All Initiative – taught underprivileged students basic programming).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-contact-footer-section-titled-let-s-connect-with-the-provided-message-text-contact-info-email-phone-shown-with-icons-github-link-and-a-visible-linkedin-placeholder-link-no-url-required-add-copyright-text-2023-mohmad-arif-wani",
+      "title": "Implement the Contact/Footer section titled \"Let's Connect\" with the provided message text, contact info (email + phone) shown with icons, GitHub link, and a visible LinkedIn placeholder link (no URL required). Add copyright text: \"© 2023 Mohmad Arif Wani.\"",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-form-in-the-contact-section-that-submits-messages-to-the-motoko-backend-for-storage-the-form-must-collect-at-minimum-sender-name-sender-email-and-message-body-and-must-display-a-clear-success-failure-state-after-submission",
+      "title": "Add a contact form in the Contact section that submits messages to the Motoko backend for storage. The form must collect at minimum: sender name, sender email, and message body, and must display a clear success/failure state after submission.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-user-s-design-preferences-across-the-site-dark-navy-background-1a2639-off-white-text-f4f4f4-and-a-teal-accent-4ecdc4-or-a-soft-orange-as-an-alternative-accent-use-clean-modern-typography-inter-or-poppins-for-headings-open-sans-or-roboto-for-body-subtle-shadows-card-borders-and-generous-whitespace-for-a-professional-minimal-aesthetic",
+      "title": "Apply the user’s design preferences across the site: dark navy background (#1a2639), off-white text (#f4f4f4), and a teal accent (#4ecdc4) (or a soft orange as an alternative accent). Use clean modern typography (Inter or Poppins for headings; Open Sans or Roboto for body), subtle shadows, card borders, and generous whitespace for a professional, minimal aesthetic.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-incorporate-the-required-generated-images-as-static-assets-under-frontend-public-assets-generated-and-render-them-in-the-ui-hero-background-illustration-and-an-optional-profile-avatar-placeholder",
+      "title": "Incorporate the required generated images as static assets under frontend/public/assets/generated and render them in the UI (hero background/illustration and an optional profile avatar placeholder).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-portfolio-s-displayed-contact-email-address-by-centralizing-it-into-a-single-frontend-constant-and-rendering-that-value-consistently-anywhere-the-email-appears-at-minimum-hero-section-and-contact-footer-section",
+      "title": "Update the portfolio’s displayed contact email address by centralizing it into a single frontend constant and rendering that value consistently anywhere the email appears (at minimum: Hero section and Contact/Footer section).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-random-photo-static-image-asset-under-frontend-public-assets-generated-and-display-it-prominently-as-the-profile-photo-in-the-hero-section-replacing-the-current-placeholder-avatar-image",
+      "title": "Add a new “random photo” static image asset under frontend/public/assets/generated and display it prominently as the profile photo in the Hero section (replacing the current placeholder avatar image).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-professional-animation-effects-across-the-single-page-portfolio-including-1-section-content-reveal-animations-on-scroll-and-2-subtle-hover-focus-micro-interactions-for-interactive-elements-buttons-cards-nav-links-while-preserving-accessibility-preferences-reduced-motion",
+      "title": "Add professional animation effects across the single-page portfolio, including: (1) section/content reveal animations on scroll, and (2) subtle hover/focus micro-interactions for interactive elements (buttons, cards, nav links), while preserving accessibility preferences (reduced motion).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-centralized-portfolio-contact-email-address-to-arifwani1995-gmail-com-and-ensure-that-this-exact-email-renders-anywhere-the-portfolio-displays-the-email-at-minimum-hero-section-and-contact-footer-section",
+      "title": "Update the centralized portfolio contact email address to \"arifwani1995@gmail.com\" and ensure that this exact email renders anywhere the portfolio displays the email (at minimum: Hero section and Contact/Footer section).",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-the-portfolio-s-typography-styling-so-the-design-feels-more-visually-attractive-and-colorful-while-remaining-professional-by-introducing-additional-tasteful-color-accents-in-text-e-g-section-headings-key-labels-highlights-that-stay-consistent-with-the-existing-palette-and-do-not-reduce-readability-or-accessibility",
+      "title": "Enhance the portfolio’s typography styling so the design feels more visually attractive and colorful while remaining professional, by introducing additional tasteful color accents in text (e.g., section headings, key labels, highlights) that stay consistent with the existing palette and do not reduce readability or accessibility.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-portfolio-s-overall-background-more-colorful-while-keeping-it-professional-and-readable-e-g-add-subtle-multi-color-gradients-aurora-effects-behind-the-page-and-or-alternating-sections-and-ensure-the-new-background-styling-is-applied-consistently-across-the-single-page-layout",
+      "title": "Make the portfolio’s overall background more colorful while keeping it professional and readable (e.g., add subtle multi-color gradients/aurora effects behind the page and/or alternating sections) and ensure the new background styling is applied consistently across the single-page layout.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-decorated-text-styling-across-the-portfolio-by-adding-tasteful-typographic-accents-e-g-gradient-headings-highlighted-keywords-labels-subtle-text-outlines-shadows-where-appropriate-while-keeping-the-design-cohesive-with-the-existing-palette-and-ensuring-it-works-with-reduced-motion-accessibility-preferences",
+      "title": "Enhance “decorated text” styling across the portfolio by adding tasteful typographic accents (e.g., gradient headings, highlighted keywords/labels, subtle text outlines/shadows where appropriate) while keeping the design cohesive with the existing palette and ensuring it works with reduced-motion/accessibility preferences.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-provide-the-exact-in-repo-file-path-where-the-user-should-place-replace-their-profile-photo-so-it-appears-in-the-hero-section-and-make-this-path-discoverable-in-the-codebase-e-g-via-a-clearly-named-constant-and-or-an-inline-comment-near-the-hero-image-the-currently-used-profile-image-path-must-be-surfaced-exactly-as-used-by-the-app",
+      "title": "Provide the exact in-repo file path where the user should place/replace their profile photo so it appears in the Hero section, and make this path discoverable in the codebase (e.g., via a clearly named constant and/or an inline comment near the Hero image). The currently used profile image path must be surfaced exactly as used by the app.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build single-page portfolio website with sections (Home/Hero, About/Objective, Education, Skills, Projects, Experience, Certifications/Achievements, Contact) and sticky smooth-scroll navigation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add Resume button/link in navbar (visual link to PDF download/URL)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement responsive modern UI (professional palette, clean typography, cards/timelines, whitespace)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Projects grid/cards with tech stack, achievements, and GitHub links opening in new tab",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Include backend-enabled contact feature (e.g., contact form with message storage) to support optional dynamic functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Implement a Motoko backend (single main actor) that stores contact form messages in stable state. Provide methods to: create/store a message (with timestamp), and list messages for administrative inspection (simple list API; no authentication required unless later requested).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Update displayed contact email address across the site (Hero and Contact sections) to the new user-provided email",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Add a photo image to the portfolio (e.g., profile photo or decorative image) using a placeholder/random image asset until the user provides an exact photo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Add animation effects to the UI (e.g., section reveal on scroll, hover micro-interactions, smooth transitions) while keeping the design professional",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Make the design more visually attractive with more colorful text accents while keeping it professional (in addition to responsive layout and animations)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Add a more colorful background theme and decorated/stylized text across the portfolio while keeping it professional and readable",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Provide the exact file path/location in the project where the user should place their profile photo asset to show in the Hero section",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Single-page portfolio for Mohmad Arif Wani with backend contact message storage",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

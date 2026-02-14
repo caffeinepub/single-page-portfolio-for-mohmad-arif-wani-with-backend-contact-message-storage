@@ -1,2 +1,3 @@
-# single-page-portfolio-for-mohmad-arif-wani-with-backend-contact-message-storage
-Exported from Caffeine project: Single-page portfolio for Mohmad Arif Wani with backend contact message storage
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

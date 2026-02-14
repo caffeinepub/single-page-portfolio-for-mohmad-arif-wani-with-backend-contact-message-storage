@@ -1,0 +1,74 @@
+{
+  "kind": "build_request",
+  "title": "Add more colorful backgrounds, stylized text accents, and document profile photo file path",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "text": "Make the portfolio’s overall background more colorful while keeping it professional and readable (e.g., add subtle multi-color gradients/aurora effects behind the page and/or alternating sections) and ensure the new background styling is applied consistently across the single-page layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "add colourful background and decorated text"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site background shows a clearly more colorful (but not distracting) gradient/aurora-style treatment compared to the current flat dark navy background.",
+        "Text contrast remains accessible (no major readability regressions on headings, body text, and cards).",
+        "The updated background styling is consistent across the single-page portfolio (Hero through Footer), with sections still visually separated (e.g., via subtle overlays, tints, or dividers).",
+        "No changes are made to any files under the immutable paths listed in SYSTEM_CONTEXT."
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Enhance “decorated text” styling across the portfolio by adding tasteful typographic accents (e.g., gradient headings, highlighted keywords/labels, subtle text outlines/shadows where appropriate) while keeping the design cohesive with the existing palette and ensuring it works with reduced-motion/accessibility preferences.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "decorated text"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section headings and key labels have visibly enhanced styling (e.g., gradients/accents) beyond the current baseline, without looking cluttered.",
+        "Decorative text effects do not reduce legibility on mobile and desktop breakpoints.",
+        "Reduced motion users do not see animated/flashy text effects (static styling remains acceptable)."
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Provide the exact in-repo file path where the user should place/replace their profile photo so it appears in the Hero section, and make this path discoverable in the codebase (e.g., via a clearly named constant and/or an inline comment near the Hero image). The currently used profile image path must be surfaced exactly as used by the app.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "also give me path of file where i insert my photo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Hero section profile image source path is clearly documented in the codebase and matches the live-used path.",
+        "The documented path points to the currently referenced image: \"/assets/generated/random-profile-photo.dim_800x800.jpg\" and corresponds to a file location under \"frontend/public/assets/generated/random-profile-photo.dim_800x800.jpg\".",
+        "Documentation is written in English and is easy to find (e.g., comment adjacent to the <img> in \"frontend/src/pages/PortfolioSinglePage.tsx\" or a small exported constant used by the component)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files under the immutable paths listed in SYSTEM_CONTEXT must not be modified (compose existing UI components instead).",
+    "Do not introduce any new backend services or external dependencies outside the existing stack."
+  ],
+  "nonGoals": [
+    "Adding new portfolio sections or changing the existing content structure.",
+    "Implementing new authentication, admin panels, or image upload to the backend."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

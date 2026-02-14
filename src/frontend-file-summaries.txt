@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application entry component that renders the single-page portfolio layout.",
+  "frontend/src/pages/PortfolioSinglePage.tsx": "Complete single-page portfolio with colorful aurora background, enhanced gradient text decorations on all headings, documented profile photo path usage, and improved visual hierarchy with backdrop-blur effects on cards; fixed conflicting Tailwind transition classes in footer social links.",
+  "frontend/src/features/contact/ContactForm.tsx": "Contact form component with name, email, and message fields that submits to the backend and displays success/error states with proper validation.",
+  "frontend/src/features/contact/useContactForm.ts": "Custom hook managing contact form submission state, backend communication, and error handling for the message submission feature.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching messages from the backend (currently includes getAllMessages query for potential admin use).",
+  "frontend/src/index.css": "Global styles with OKLCH color system extended with new colorful accent tokens (coral, purple, cyan, pink, blue, orange) and comprehensive gradient text utilities (rainbow, cosmic, sunset, shimmer) plus label emphasis classes for decorated typography.",
+  "frontend/index.html": "HTML entry point with proper meta tags, title, and Google Fonts integration for Inter, Poppins, and Open Sans typography with dark mode enabled by default.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with new accent color tokens mapped to CSS variables for consistent colorful theming across the application.",
+  "frontend/src/content/contact.ts": "Centralized contact information module exporting CONTACT_EMAIL constant set to \"arifwani1995@gmail.com\" as the single source of truth.",
+  "frontend/src/hooks/useScrollReveal.ts": "Custom React hook using IntersectionObserver to detect when elements enter the viewport, with automatic support for prefers-reduced-motion to disable animations for accessibility.",
+  "frontend/src/components/Reveal.tsx": "Wrapper component that applies scroll-reveal animations to its children using the useScrollReveal hook, with configurable delay and full motion-safe/motion-reduce support.",
+  "frontend/src/content/profilePhoto.ts": "Exports the profile photo path constant with detailed documentation on how to replace the image file, including the exact repository file location.",
+  "frontend/src/components/PortfolioBackground.tsx": "Reusable background component that renders a colorful aurora-style gradient with multiple layered orbs for visual depth, fully static and respecting reduced-motion preferences."
+}
